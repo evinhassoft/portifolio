@@ -23,6 +23,7 @@ body {
 }
 
 .person-content div h1 {
+    text-align: righ;
     position: relative;
     padding: 0px 4px;
     font-size: 4rem;
@@ -152,7 +153,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #E70000;
     background-image: url(../../../assets/background.jpg);
     background-position: top center;
     background-size: cover;
@@ -168,7 +168,8 @@ body {
     top: 0;
     left: 0;
     background: 
-        linear-gradient(270deg, transparent 12%, #f1f1f1);
+        linear-gradient(270deg, transparent 12%, #f1f1f1),
+        linear-gradient(180deg, transparent 22%, #f1f1f1);
 }
 
 .links  a img {
@@ -238,4 +239,61 @@ body {
 .btn-cv button:hover{
     opacity: 1;
     transform: scale(1.2);
+}
+
+#about{
+    display: flex;
+}
+.about-background {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E70000;
+    background-image: url(../../../assets/background-pcd.jpg);
+    background-position: bottom right;
+    background-size: cover;
+    z-index: 1;
+}
+
+.about-txt {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+
+.about-background::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: 
+        linear-gradient(0deg, transparent 0%, #f1f1f1),
+        linear-gradient(90deg, transparent 0%, #f1f1f1);
+}
+
+.about-txt h1 {
+    color: #E70000;
+    padding-left: 100px;
+    text-align: left;
+    font-size: 4rem;
+    line-height: 6rem;
+
+}
+
+
+.about-txt h3 {
+    color: #222222;
+    padding-left: 100px;
+    line-height: 6rem;
+    font-size: 3rem;
 }
