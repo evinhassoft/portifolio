@@ -4,11 +4,15 @@ a {
     text-decoration: none;
 }
 
-nav {
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
     display: flex;
     justify-content: space-around;
-    background-color: #c50000;
-    height: 90px;
+    background-color: #C50000;
+    height: 70px;
+    width: 100%;
     align-items: center;
 }
 
@@ -23,7 +27,7 @@ li>a{
     margin-left: 40px;
     font-weight: 700;
     letter-spacing: 2px;
-    font-size: 34px;
+    font-size: 23px;
     color: #fffdef;
     transition: .3s ease;
 }
@@ -35,7 +39,7 @@ li>a:hover{
 
 .logo > a{
     font-weight: 700;
-    font-size: 70px;
+    font-size: 30px;
     color: #fffdef;
     display: flex;
 }
@@ -52,3 +56,4 @@ li>a:hover{
     transition: .3s ease;
     letter-spacing: 1px;
 }
+

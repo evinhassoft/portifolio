@@ -15,7 +15,7 @@ body {
 
 .person-content {
     height: 100vh;
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,9 @@ body {
     animation: written_tex_name .5s ease forwards;
     animation-delay:  3s;
 }
-
+.person-content div h1:nth-child(4){
+    animation-delay:  4s;
+}
 .person-content div h1 span {
     position: absolute;
     top: 0;
@@ -62,6 +64,9 @@ body {
 }
 .person-content div h1:nth-child(3) span{
     animation-delay: 3s;
+}
+.person-content div h1:nth-child(4) span{
+    animation-delay: 4s;
 }
 
 @keyframes written_tex {
@@ -141,7 +146,7 @@ body {
 
 .person-background {
     height: 100vh;
-    width: 100%;
+    width: 50%;
     display: flex;
     position: relative;
     justify-content: center;
@@ -167,7 +172,9 @@ body {
 }
 
 .links  a img {
-    margin: 10px;
+    margin-top: 65px;
+    margin-left: 5px;
+    margin-right: 5px;
     filter: brightness(.8);
     width: 30px;
     transition: all .3s ease;
@@ -185,6 +192,8 @@ body {
     align-items: center;
     padding: 14px;
     margin: 20px 15px;
+    
+
     border-radius: 50%;
     background: 
     radial-gradient(rgba(255,255,255,0.2) 60%, transparent 0),
@@ -192,10 +201,41 @@ body {
     linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
 }
 
+.wrapper-profile-photo img:hover{
+    transform: scale(1.05);
+}
+
 
 .wrapper-profile-photo img{
+    transition: all .3s ease;
     border-radius: 50%;
-    width: 500px;
+    width: 400px;
 }
 
 /* END PERSON */
+
+.btn-cv button img {
+    width: 30px;
+}
+
+.btn-cv button {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: none;
+    background: linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
+    color: #f1f1f1;
+    height: 40px;
+    margin-bottom: 70px;
+    font-weight: 900;
+    transition: .3s ease ;
+    opacity: .9;
+}
+
+.btn-cv button:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
