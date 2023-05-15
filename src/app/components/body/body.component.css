@@ -278,6 +278,7 @@ body {
     top: 0;
     left: 0;
     background: 
+    linear-gradient(180deg, transparent 0%, #f1f1f1),
         linear-gradient(0deg, transparent 0%, #f1f1f1),
         linear-gradient(90deg, transparent 0%, #f1f1f1);
 }
@@ -328,11 +329,12 @@ body {
 /* START PROJECTS */
 
 #projects {
-    height: 100vh;
+    height: auto;
     background: #f1f1f1;
 }
 
 .projects-list{
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -357,39 +359,117 @@ body {
 .projects-list .engventure .txt-engventure p {
     font-size: 2rem;
     margin-left: 100px;
-    line-height: 2rem;
+    line-height: 3rem;
     font-weight: 700;
     color: #222222;
 }
 
 .projects-list .engventure .txt-engventure h1{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 800;
     margin-left: 100px;
     line-height: 6rem;
     color: #E70000;
     position: relative;
 }
-.projects-list .engventure img{
+.projects-list .engventure .img-engventure img{
     margin-left: 180px;
     border-radius: 25px;
     width: 650px;
     display: flex;
     align-items: center;
     justify-items: center;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.projects-list .engventure img:hover{
+    transform: scale(1.1);
 }
 
 .projects-list .engventure .links-engventure {
- display: flex;
+    display: flex;
+    margin-left: 70px;
 }
 .projects-list .engventure .links-engventure a img {
-   
+    margin-top: 30px;
     filter: brightness(.8);
     width: 50px;
     transition: all .3s ease;
 }
 
+.projects-list .engventure .links-engventure img {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 50px;
+    transition: all .3s ease;
+}
+
+.projects-list .engventure .links-engventure img:hover{
+    transform: scale(1.3);
+    filter: brightness(1); 
+}
+
 .projects-list .engventure .links-engventure a img:hover{
     transform: scale(1.3);
     filter: brightness(1);
+}
+
+.projects-list .shortly .img-shortly img{
+    margin-top: 150px;
+     margin-left: 180px;
+    border-radius: 25px;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.projects-list .shortly .img-shortly img:hover{
+    transform: scale(1.1);
+}
+
+.projects-list .shortly {
+    margin-top: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: relative;    
+}
+
+.projects-list .shortly .txt-shortly{
+    margin-top: 130px;
+}
+.projects-list .shortly .txt-shortly p{
+    font-size: 2rem;
+    margin-left: 200px;
+    line-height: 3rem;
+    font-weight: 700;
+    color: #222222;
+}
+
+.projects-list .shortly .txt-shortly h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-left: 200px;
+    line-height: 6rem;
+    color: #E70000;
+    position: relative;
+}
+
+.projects-list .shortly .txt-shortly .links-shortly {
+    margin-left: 170px;
+}
+
+.projects-list .shortly .txt-shortly .links-shortly img {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 50px;
+    transition: all .3s ease;
+}
+
+.projects-list .shortly .txt-shortly .links-shortly img:hover{
+    transform: scale(1.3);
 }
