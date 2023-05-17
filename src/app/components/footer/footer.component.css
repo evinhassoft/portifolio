@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background-color: #C50000;
+}
+
+.footer .links-imgs {
+    margin-left: 30px;
+    display: flex;
+}
+.footer .links-imgs img {
+    margin-left: 30px;
+    width: 50px;
+    opacity: .8;
+    transition: all .3s ease;
+}
+
+.footer .links-imgs img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.footer h1{
+    font-size: 1.8rem;
+    color: #f1f1f1;
+}
