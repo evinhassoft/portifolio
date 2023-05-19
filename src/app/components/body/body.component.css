@@ -32,19 +32,23 @@ body {
     animation: written_tex .5s ease forwards;
 }
 
-.person-content div h1:nth-child(1){
+.person-content div h1:nth-child(1) {
     animation-delay: 1s;
 }
-.person-content div h1:nth-child(2){
+
+.person-content div h1:nth-child(2) {
     animation-delay: 2s;
 }
-.person-content div h1:nth-child(3){
+
+.person-content div h1:nth-child(3) {
     animation: written_tex_name .5s ease forwards;
-    animation-delay:  3s;
+    animation-delay: 3s;
 }
-.person-content div h1:nth-child(4){
-    animation-delay:  4s;
+
+.person-content div h1:nth-child(4) {
+    animation-delay: 4s;
 }
+
 .person-content div h1 span {
     position: absolute;
     top: 0;
@@ -55,39 +59,42 @@ body {
     height: 100%;
 }
 
-.person-content div h1:nth-child(1) span{
+.person-content div h1:nth-child(1) span {
     animation-delay: 1s;
 }
 
-.person-content div h1:nth-child(2) span{
+.person-content div h1:nth-child(2) span {
     animation-delay: 2s;
 }
-.person-content div h1:nth-child(3) span{
+
+.person-content div h1:nth-child(3) span {
     animation-delay: 3s;
 }
-.person-content div h1:nth-child(4) span{
+
+.person-content div h1:nth-child(4) span {
     animation-delay: 4s;
 }
 
 @keyframes written_tex {
-    100%{
+    100% {
         color: #222222;
     }
 }
 
 
 @keyframes written_tex_name {
-    100%{
+    100% {
         color: #E70000;
     }
 }
 
 @keyframes written_tex_box {
-    50%{
+    50% {
         width: 100%;
         left: 0;
     }
-    100%{
+
+    100% {
         left: 100%;
         width: 0;
 
@@ -127,13 +134,13 @@ body {
     cursor: pointer;
 }
 
-.stacks ul{
+.stacks ul {
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-.stacks ul li div:hover::after{
+.stacks ul li div:hover::after {
     content: attr(data);
     position: absolute;
     top: 50px;
@@ -159,7 +166,7 @@ body {
     z-index: 1;
 }
 
-.person-background::after{
+.person-background::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -167,7 +174,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: 
+    background:
         linear-gradient(270deg, transparent 12%, #f1f1f1),
         linear-gradient(180deg, transparent 22%, #f1f1f1);
 }
@@ -182,32 +189,32 @@ body {
     z-index: 2;
 }
 
-.links a img:hover{
+.links a img:hover {
     transform: scale(1.3);
     filter: brightness(1);
 }
 
-.wrapper-profile-photo{
+.wrapper-profile-photo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 14px;
     margin: 20px 15px;
-    
+
 
     border-radius: 50%;
-    background: 
-    radial-gradient(rgba(255,255,255,0.2) 60%, transparent 0),
-    radial-gradient(#fff 68%, transparent 0),
-    linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
+    background:
+        radial-gradient(rgba(255, 255, 255, 0.2) 60%, transparent 0),
+        radial-gradient(#fff 68%, transparent 0),
+        linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
 }
 
-.wrapper-profile-photo img:hover{
+.wrapper-profile-photo img:hover {
     transform: scale(1.05);
 }
 
 
-.wrapper-profile-photo img{
+.wrapper-profile-photo img {
     transition: all .3s ease;
     border-radius: 50%;
     width: 400px;
@@ -215,13 +222,14 @@ body {
 
 .btn-cv button img {
     width: 30px;
+    margin-right: 2px;
 }
 
 .btn-cv button {
     justify-content: space-around;
     align-items: center;
     display: flex;
-    width: 100px;
+    width: 110px;
     cursor: pointer;
     border-radius: 8px;
     border-style: none;
@@ -230,11 +238,11 @@ body {
     height: 40px;
     margin-bottom: 70px;
     font-weight: 900;
-    transition: .3s ease ;
+    transition: .3s ease;
     opacity: .9;
 }
 
-.btn-cv button:hover{
+.btn-cv button:hover {
     opacity: 1;
     transform: scale(1.2);
 }
@@ -246,13 +254,15 @@ body {
     align-items: center;
     text-decoration: none;
 }
+
 /* END PERSON */
 
 
 
-#about{
+#about {
     display: flex;
 }
+
 .about-background {
     height: 100vh;
     width: 50%;
@@ -278,7 +288,7 @@ body {
     background-color: #f1f1f1;
 }
 
-.about-background::after{
+.about-background::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -286,8 +296,8 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: 
-    linear-gradient(180deg, transparent 0%, #f1f1f1),
+    background:
+        linear-gradient(180deg, transparent 0%, #f1f1f1),
         linear-gradient(0deg, transparent 0%, #f1f1f1),
         linear-gradient(90deg, transparent 0%, #f1f1f1);
 }
@@ -317,7 +327,7 @@ body {
     width: 160px;
 }
 
-.coracao { 
+.coracao {
     bottom: 350px;
     left: 700px;
     opacity: .3;
@@ -342,7 +352,7 @@ body {
     background: #f1f1f1;
 }
 
-.projects-list{
+.projects-list {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -373,7 +383,7 @@ body {
     color: #222222;
 }
 
-.projects-list .engventure .txt-engventure h1{
+.projects-list .engventure .txt-engventure h1 {
     font-size: 4rem;
     font-weight: 800;
     margin-left: 100px;
@@ -381,7 +391,8 @@ body {
     color: #E70000;
     position: relative;
 }
-.projects-list .engventure .img-engventure img{
+
+.projects-list .engventure .img-engventure img {
     margin-left: 180px;
     border-radius: 25px;
     width: 650px;
@@ -392,7 +403,7 @@ body {
     cursor: pointer;
 }
 
-.projects-list .engventure img:hover{
+.projects-list .engventure img:hover {
     transform: scale(1.1);
 }
 
@@ -400,6 +411,7 @@ body {
     display: flex;
     margin-left: 70px;
 }
+
 .projects-list .engventure .links-engventure a img {
     margin-top: 30px;
     filter: brightness(.8);
@@ -414,19 +426,19 @@ body {
     transition: all .3s ease;
 }
 
-.projects-list .engventure .links-engventure img:hover{
-    transform: scale(1.3);
-    filter: brightness(1); 
-}
-
-.projects-list .engventure .links-engventure a img:hover{
+.projects-list .engventure .links-engventure img:hover {
     transform: scale(1.3);
     filter: brightness(1);
 }
 
-.projects-list .shortly .img-shortly img{
+.projects-list .engventure .links-engventure a img:hover {
+    transform: scale(1.3);
+    filter: brightness(1);
+}
+
+.projects-list .shortly .img-shortly img {
     margin-top: 150px;
-     margin-left: 180px;
+    margin-left: 180px;
     border-radius: 25px;
     height: 400px;
     width: 650px;
@@ -437,7 +449,7 @@ body {
     cursor: pointer;
 }
 
-.projects-list .shortly .img-shortly img:hover{
+.projects-list .shortly .img-shortly img:hover {
     transform: scale(1.1);
 }
 
@@ -447,13 +459,14 @@ body {
     display: flex;
     justify-items: center;
     align-items: center;
-    position: relative;    
+    position: relative;
 }
 
-.projects-list .shortly .txt-shortly{
+.projects-list .shortly .txt-shortly {
     margin-top: 130px;
 }
-.projects-list .shortly .txt-shortly p{
+
+.projects-list .shortly .txt-shortly p {
     font-size: 2rem;
     margin-left: 200px;
     line-height: 3rem;
@@ -461,7 +474,7 @@ body {
     color: #222222;
 }
 
-.projects-list .shortly .txt-shortly h1{
+.projects-list .shortly .txt-shortly h1 {
     font-size: 4rem;
     font-weight: 800;
     margin-left: 200px;
@@ -481,7 +494,7 @@ body {
     transition: all .3s ease;
 }
 
-.projects-list .shortly .txt-shortly .links-shortly img:hover{
+.projects-list .shortly .txt-shortly .links-shortly img:hover {
     transform: scale(1.3);
 }
 
@@ -494,13 +507,14 @@ body {
     background: #fffdef;
 }
 
-.contact{
+.contact {
     top: 50px;
     position: relative;
 }
+
 .contact>h2 {
     text-align: center;
-    font-family: 'Inconsolata', monospace; 
+    font-family: 'Inconsolata', monospace;
     font-size: 4rem;
     color: #E70000;
 }
@@ -512,18 +526,19 @@ body {
 }
 
 .contact .contact-list {
-    
+
     margin-top: 50px;
     justify-content: space-around;
     display: flex;
 
 }
+
 .contact-list img {
     width: 170px;
     cursor: pointer;
     transition: all .3s ease;
 }
 
-.contact-list img:hover{
+.contact-list img:hover {
     transform: scale(1.1);
 }
